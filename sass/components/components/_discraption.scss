@@ -1,0 +1,103 @@
+.discraption__list-item1::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-image: url(../img/icons.svg/Group1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $center-button-backgraund;
+    border-radius: 4px;
+}
+
+.discraption__list-item2::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-image: url(../img/icons.svg/clock\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $center-button-backgraund;
+    border-radius: 4px;
+}
+
+.discraption__list-item3::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-image: url(../img/icons.svg/diagram\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $center-button-backgraund;
+    border-radius: 4px;
+}
+
+.discraption__list-item4::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-image: url(../img/icons.svg/astronaut\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $center-button-backgraund;
+    border-radius: 4px;
+}
+.discraption__feature {
+    display: flex;
+    margin-left: 15px;
+    padding-left: 0;
+}
+
+
+
+
+.discraption__feature li:last-child {
+   margin-right: 0px;
+}
+
+
+
+
+
+
+.discraption__feature li {
+    width: 270px;
+    margin-right: 30px;
+    justify-content: space-between;
+}
+
+.discraption__details {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.section-discraption {
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
+.discraption__background {
+    display: none;
+}
+
+.icon__discraption {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121; 
+    margin-bottom: 50px;
+}
+
+.description__problems {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $link-text-color;
+}

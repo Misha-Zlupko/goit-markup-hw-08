@@ -1,0 +1,282 @@
+/* backdrop */
+
+
+.backdrop {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-image: linear-gradient(to right , rgba(0,0,0,0.4) ,
+     rgba(0, 0, 0, 0.4) );
+    transition: opacity, $anim-slow cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+
+.backdrop__modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 528px;
+    min-height: 581px;
+    background-color: $primary-backgraund-color;
+    border-radius: 4px;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.backdrop__btn {
+    top: 8px;
+    right: 8px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $primary-backgraund-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: $header__logo-text-color;
+    cursor: pointer;
+}
+
+
+
+.backdrop__btn:hover .backdrop__icon-close {
+    fill: $hover-focus-color;
+}
+
+
+
+
+
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+
+.backdrop.is-hidden .backdrop__modal {
+    transform: translate( -50%, -70%);
+    opacity: 0;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  /* Form */
+
+.backdrop__lebel-description {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20) ;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $description-text-color;
+    padding-top: 40px;
+    margin-bottom: 12px;
+}
+
+
+.backdrop__wapper-form {
+    display: block;
+}
+
+.backdrop__form {
+    display: grid;
+    justify-content: center;
+}
+
+
+.backdrop__label {
+    margin-bottom: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+
+
+.backdrop__label-text {
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.01em;
+
+    color: $link-text-color;
+
+    margin-bottom: 4px;
+}
+
+
+.backdrop__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+
+.backdrop__input:focus {
+    outline: 1px solid $hover-focus-color;
+    border-radius: 4px;
+    border: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.backdrop__input:focus + .backdrop__icon-label{
+    fill: $hover-focus-color;
+}
+
+
+
+.backdrop__comment-text {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: $header__logo-text-color;
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+}
+
+
+.backdrop__comment-text:focus {
+    outline: 1px solid $hover-focus-color;
+    border: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.backdrop__label-text-checkbox {
+font-size: 14px;
+line-height: calc(24 / 14);
+
+letter-spacing: 0.03em;
+color: $link-text-color;
+}
+
+
+
+.backdrop__label-link {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+
+    letter-spacing: 0.03em; 
+    color: $hover-focus-color;
+}
+
+
+
+.backdrop__icon-label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13px;
+}
+
+
+.backdrop__wapper-icon-label {
+    position: relative;
+}
+
+
+
+
+
+
+.backdrop__agreement-checkbox {
+    appearance: none;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $description-text-color;
+    border-radius: 1px;
+    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) , border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.backdrop__label-text-icon {
+    position: absolute;
+    bottom: 4px;
+    left: 1px;
+    top: 2px;
+    right: 4px;
+    fill: $primary-backgraund-color;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop__agreement-checkbox:checked + .backdrop__label-text-icon {
+    opacity: 1;
+} 
+
+
+.backdrop__label-text-agermeent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.backdrop__agreement-checkbox:checked {
+    background-repeat: no-repeat;
+    background: $hover-focus-color;
+    background-size: 11px 8px;
+    border: transparent;
+}
+
+
+.backdrop__label-text-wrapper {
+    position: relative;
+}
+
+
+.backdrop__label-comment {
+    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+
+.backdrop__form-btn {
+    width: 200px;
+    height: 50px;
+    padding: 10px 52px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: $hover-focus-color;
+    border: transparent;
+    color: $primary-backgraund-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop__form-btn:hover, .backdrop__form-btn:focus {
+    background-color: $button--color;
+}
+
+.backdrop__wapper-btn-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

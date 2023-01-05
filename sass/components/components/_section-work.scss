@@ -1,0 +1,127 @@
+.work__icon-description1::before {
+    content: "";
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    position: absolute;
+}
+
+
+.work__icon-description2::before {
+    content: "";
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    display: inline-block;
+    bottom: 0;
+    height: 70px;
+    position: absolute;
+}
+
+
+.work__icon-description3::before {
+    content: "";
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    display: inline-block;
+    bottom: 0;
+
+    height: 70px;
+    position: absolute;
+}
+
+.work__icon-name1 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    content: "";
+    width: 370px;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    position: absolute;
+    padding: 27px 107px;
+    color: $primary-backgraund-color;
+}
+
+
+.work__icon-name2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    content: "";
+    width: 370px;
+    display: inline-block;
+    bottom: 0;
+    height: 70px;
+    position: absolute;
+    padding: 27px 107px;
+    color: $primary-backgraund-color;
+}
+
+
+.work__icon-name3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    content: "";
+    width: 100%;
+    display: inline-block;
+    bottom: 0;
+    position: absolute;
+    color: $primary-backgraund-color;
+    padding: 27px 95px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.work__about-us {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $description-text-color; 
+    margin-bottom: 50px;
+
+}
+
+.work {
+    margin-bottom: 0;
+    padding-top: 47px;
+    padding-bottom: 94px;
+}
+
+.work__foto {
+    flex-direction: row;
+    display: flex;
+
+    padding-left: 0;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+.work__foto li {
+    margin-left: 30px;
+}
+
+
+
+.work__foto li:first-child {
+    margin-left: 0px;
+}
