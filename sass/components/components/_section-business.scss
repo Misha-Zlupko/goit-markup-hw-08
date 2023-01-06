@@ -1,61 +1,71 @@
 .business {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    color: $primary-backgraund-color;
-    text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  color: $primary-backgraund-color;
+  text-transform: uppercase;
 }
 
 .business__title {
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    color: $primary-backgraund-color;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  color: $primary-backgraund-color;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+    line-height: 1.6;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    width: 360px;
+  }
 }
-
-
 
 .business {
-    padding-bottom: 200px;
-    text-align: center;
-    padding-top: 200px;
-    background-color: $footer-backgraund-color;
-    background-image: linear-gradient(to right ,
-     rgba(0,0,0,0.4) ,
-     rgba(0, 0, 0, 0.4)
-    ), url(../img/back\ ground\ hero\ chenge.jpg);
-    max-width: 1600px;
-    margin-right: auto;
-    margin-left: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
+  padding-bottom: 200px;
+  text-align: center;
+  padding-top: 200px;
+  background-color: $footer-backgraund-color;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../img/back\ ground\ hero\ chenge.jpg);
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 .business__button {
-    text-align: center;
-    color: $primary-backgraund-color;
-    background-color: $hover-focus-color;
-    outline: none;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    align-items: center;
-    letter-spacing: 0.06em; 
-    border-radius: 4px;
-    min-width: 216px;
-    padding: 10px 32px;
-    border: 0px;
-    cursor: pointer;
+  text-align: center;
+  color: $primary-backgraund-color;
+  background-color: $hover-focus-color;
+  outline: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  min-width: 216px;
+  padding: 10px 32px;
+  border: 0px;
+  cursor: pointer;
 }
 
-
-.business__button:hover , .business__button:focus {
-    background-color: $button--color;
-    color: $primary-backgraund-color;
+.business__button:hover,
+.business__button:focus {
+  background-color: $button--color;
+  color: $primary-backgraund-color;
 }
