@@ -161,3 +161,8 @@
   position: absolute;
   cursor: pointer;
 }
+
+.backdrop-nav__button-svg:focus,
+.backdrop-nav__button-svg:hover {
+  fill: $hover-focus-color;
+}
