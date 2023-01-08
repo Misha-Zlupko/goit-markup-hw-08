@@ -6,7 +6,7 @@
     bottom: 0;
     top: 0;
     background-color: $primary-backgraund-color;
-    position: fixed;
+    position: absolute;
     width: 480px;
     display: flex;
     margin-left: auto;
@@ -15,12 +15,22 @@
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.backdrop-nav.is-open {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
 .backdrop-nav__wrapper {
   width: 100%;
-  margin-top: 48px;
 }
 
 .backdrop-nav__contact-wrapper {
@@ -133,6 +143,7 @@
   width: 40px;
   height: 40px;
   margin-left: auto;
+  margin-top: 10px;
 }
 
 .backdrop-nav__title-contacts:first-child {
@@ -148,4 +159,5 @@
   border: none;
   right: 15px;
   position: absolute;
+  cursor: pointer;
 }

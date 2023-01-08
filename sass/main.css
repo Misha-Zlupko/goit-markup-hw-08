@@ -58,6 +58,10 @@ body {
   overflow-x: hidden;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -98,6 +102,16 @@ body {
   border-radius: 4px;
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .backdrop__modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__modal {
+    width: 528px;
+  }
 }
 
 .backdrop__btn {
@@ -201,6 +215,16 @@ body {
   border-radius: 4px;
   resize: none;
 }
+@media screen and (min-width: 480px) {
+  .backdrop__comment-text {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__comment-text {
+    width: 448px;
+  }
+}
 
 .backdrop__comment-text:focus {
   outline: 1px solid #2196F3;
@@ -213,6 +237,20 @@ body {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 480px) {
+  .backdrop__label-text-checkbox {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__label-text-checkbox {
+    font-size: 14px;
+    line-height: 1.7142857143;
+    letter-spacing: 0.03em;
+  }
 }
 
 .backdrop__label-link {
@@ -267,6 +305,12 @@ body {
   justify-content: center;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 480px) {
+  .backdrop__label-text-agermeent {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
 
 .backdrop__agreement-checkbox:checked {
   background-repeat: no-repeat;
@@ -297,7 +341,8 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop__form-btn:hover, .backdrop__form-btn:focus {
+.backdrop__form-btn:hover,
+.backdrop__form-btn:focus {
   background-color: #188CE8;
 }
 
@@ -1250,6 +1295,7 @@ body {
 
 .header {
   border-bottom: 1px solid #ECECEC;
+  position: relative;
 }
 
 .header__button-nomber svg {
@@ -1341,6 +1387,10 @@ body {
 .header__modal-window-button:hover,
 .header__modal-window-button:focus {
   fill: #2196F3;
+}
+
+.header__modal-window-button.is-open .backdrop-nav__button-svg {
+  display: block;
 }
 
 .icon__discraption {
@@ -1491,6 +1541,11 @@ body {
   margin-left: auto;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (min-width: 480px) {
+  .business {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/Header\ img.jpg);
+  }
 }
 
 .business__button {
@@ -2050,7 +2105,7 @@ body {
     bottom: 0;
     top: 0;
     background-color: white;
-    position: fixed;
+    position: absolute;
     width: 480px;
     display: flex;
     margin-left: auto;
@@ -2059,12 +2114,26 @@ body {
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .backdrop-nav {
+    display: none;
+  }
+}
+
+.backdrop-nav.is-open {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .backdrop-nav.is-open {
+    display: none;
   }
 }
 
 .backdrop-nav__wrapper {
   width: 100%;
-  margin-top: 48px;
 }
 
 .backdrop-nav__contact-wrapper {
@@ -2172,6 +2241,7 @@ body {
   width: 40px;
   height: 40px;
   margin-left: auto;
+  margin-top: 10px;
 }
 
 .backdrop-nav__title-contacts:first-child {
@@ -2187,4 +2257,5 @@ body {
   border: none;
   right: 15px;
   position: absolute;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

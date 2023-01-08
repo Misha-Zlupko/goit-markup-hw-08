@@ -51,6 +51,14 @@
   margin-left: auto;
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(/img/Header\ img.jpg);
+  }
 }
 
 .business__button {

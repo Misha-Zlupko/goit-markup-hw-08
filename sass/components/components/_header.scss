@@ -182,6 +182,7 @@
 
 .header {
   border-bottom: 1px solid $line--header;
+  position: relative;
 }
 
 .header__button-nomber svg {
@@ -275,4 +276,8 @@
 }
 
 .header__modal-window-close {
+}
+
+.header__modal-window-button.is-open .backdrop-nav__button-svg {
+  display: block;
 }

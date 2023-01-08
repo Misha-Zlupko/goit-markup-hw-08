@@ -25,11 +25,17 @@
             ><span class="header__logo-web">Web</span>Studio</a
           >
           <div class="header__modal-window">
-            <button class="header__modal-window-button">
+            <button class="header__modal-window-button is-open js-open-menu">
               <svg class="header__modal-window-open" width="40px" height="40px">
                 <use
+                  class="header__icon-open"
                   href="./img/icons.svg/symbol-defs.svg#icon-menu-open_40px"
                 ></use>
+                <!-- <use
+                  class="header__icon-cross"
+                  js-close-menu
+                  href="./img/icons.svg/symbol-defs.svg#close-backdrop"
+                ></use> -->
               </svg>
             </button>
           </div>
@@ -120,6 +126,7 @@
               <div class="work__icon-description1">
                 <p class="work__icon-name1">Десктопні додатки</p>
                 <img
+                  srcset="./img/box1.jpg x1, ./img/img333.jpg x2"
                   src="./img/box1.jpg"
                   alt="Написання сайту"
                   height="294"
@@ -131,7 +138,8 @@
               <div class="work__icon-description2">
                 <p class="work__icon-name2">Мобільні додатки</p>
                 <img
-                  src="./img/img.jpg"
+                  srcset="./img/img1233123.jpg x1, ./img/img3333.jpg x2"
+                  src="./img/img1233123.jpg"
                   alt="Дізайн"
                   height="294"
                   width="370"
@@ -142,6 +150,7 @@
               <div class="work__icon-description3">
                 <p class="work__icon-name3">Дизайнерські рішення</p>
                 <img
+                  srcset="./img/box3.jpg x1, ./img/img33333.jpg x2"
                   src="./img/box3.jpg"
                   alt="Дізайн фото"
                   height="294"
@@ -158,6 +167,7 @@
           <ul class="team__cards list">
             <li class="team__card-person">
               <img
+                srcset="./img/img3.jpg x1, ./img/img@2x.jpg x2"
                 src="./img/img3.jpg"
                 alt="Ігор Дем'яненко"
                 class="team__foto"
@@ -207,6 +217,7 @@
             </li>
             <li class="team__card-person">
               <img
+                srcset="./img/img23.jpg x1, ./img/img.jpg x2"
                 src="./img/img23.jpg"
                 alt="Ольга Рєпіна"
                 class="team__foto"
@@ -256,6 +267,7 @@
             </li>
             <li class="team__card-person">
               <img
+                srcset="./img/img2.jpg x1, ./img/img11.jpg x2"
                 src="./img/img2.jpg"
                 alt="Микола Тарасов"
                 class="team__foto"
@@ -305,6 +317,7 @@
             </li>
             <li class="team__card-person">
               <img
+                srcset="./img/img2.jpg x1, ./img/img111.jpg x2"
                 src="./img/img4.jpg"
                 alt="Михайло Єрмаков"
                 class="team__foto"
@@ -585,10 +598,10 @@
         </div>
       </div>
     </div>
-    <div class="backdrop-nav">
+    <div class="backdrop-nav is-open js-menu-container">
       <div class="backdrop-nav__wrapper">
         <div class="backdrop-nav__button-wrapper">
-          <button class="backdrop-nav__button">
+          <button class="backdrop-nav__button js-close-menu">
             <svg class="backdrop-nav__button-svg" width="40" height="40">
               <use href="./img/icons.svg/symbol-defs.svg#close-backdrop"></use>
             </svg>
@@ -666,5 +679,6 @@
         }
       })();
     </script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
