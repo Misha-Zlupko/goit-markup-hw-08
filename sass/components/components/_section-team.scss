@@ -194,7 +194,9 @@
 }
 
 .team__card-person {
-  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 .team__icon {
   list-style: none;

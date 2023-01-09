@@ -85,7 +85,7 @@
         </div>
       </section>
       <section class="discraption">
-        <div class="container">
+        <div class="discraption__container container">
           <h2 class="discraption__background">Наша увага</h2>
           <ul class="discraption__feature list">
             <li class="discraption__list-item1">
@@ -497,7 +497,9 @@
           </div>
         </div>
         <div class="form">
-          <h5 class="form__text-mail">Підпишіться на розсилку</h5>
+          <div class="form__text-mail-wrapper">
+            <p class="form__text-mail">Підпишіться на розсилку</p>
+          </div>
           <form>
             <div class="form__input-wripper">
               <input
@@ -528,73 +530,69 @@
           </svg>
         </button>
         <div class="backdrop__modal-form">
-          <h1 class="backdrop__lebel-description">
+          <p class="backdrop__lebel-description">
             Залиште свої дані, ми вам передзвонимо
-          </h1>
-          <div class="backdrop__wapper-form">
-            <form class="backdrop__form">
-              <label class="backdrop__label">
-                <span class="backdrop__label-text">Ім'я</span>
-                <div class="backdrop__wapper-icon-label">
-                  <input type="text" name="username" class="backdrop__input" />
-                  <svg class="backdrop__icon-label" width="12" height="12">
-                    <use href="./img/icons.svg/symbol-defs.svg#person"></use>
-                  </svg>
-                </div>
-              </label>
-              <label class="backdrop__label">
-                <span class="backdrop__label-text">Телефон</span>
-                <div class="backdrop__wapper-icon-label">
-                  <input type="tel" name="tel" class="backdrop__input" />
-                  <svg class="backdrop__icon-label" width="13" height="13">
-                    <use href="./img/icons.svg/symbol-defs.svg#tel"></use>
-                  </svg>
-                </div>
-              </label>
-              <label class="backdrop__label">
-                <span class="backdrop__label-text">Пошта</span>
-                <div class="backdrop__wapper-icon-label">
-                  <input type="email" name="tel" class="backdrop__input" />
-                  <svg class="backdrop__icon-label" width="16" height="12">
-                    <use href="./img/icons.svg/symbol-defs.svg#mail"></use>
-                  </svg>
-                </div>
-              </label>
-              <label class="backdrop__label-comment">
-                <span class="backdrop__label-text">Коментар</span>
-                <textarea
-                  name="comment"
-                  cols="30"
-                  rows="10"
-                  placeholder="Введіть текст"
-                  class="backdrop__comment-text"
-                ></textarea>
-              </label>
-              <label class="backdrop__label-text-agermeent">
-                <div class="backdrop__label-text-wrapper">
-                  <input
-                    type="checkbox"
-                    name="agermeent"
-                    class="backdrop__agreement-checkbox"
-                  />
-                  <svg class="backdrop__label-text-icon" width="13" height="11">
-                    <use href="./img/icons.svg/symbol-defs.svg#accept"></use>
-                  </svg>
-                </div>
-                <span class="backdrop__label-text-checkbox"
-                  >Погоджуюся з розсилкою та приймаю
-                  <a href="" class="backdrop__label-link"
-                    >Умови договору</a
-                  ></span
-                >
-              </label>
-              <div class="backdrop__wapper-btn-form">
-                <button type="submit" class="backdrop__form-btn">
-                  Відправити
-                </button>
+          </p>
+          <form class="backdrop__form backdrop__wapper-form">
+            <label class="backdrop__label">
+              <span class="backdrop__label-text">Ім'я</span>
+              <div class="backdrop__wapper-icon-label">
+                <input type="text" name="username" class="backdrop__input" />
+                <svg class="backdrop__icon-label" width="12" height="12">
+                  <use href="./img/icons.svg/symbol-defs.svg#person"></use>
+                </svg>
               </div>
-            </form>
-          </div>
+            </label>
+            <label class="backdrop__label">
+              <span class="backdrop__label-text">Телефон</span>
+              <div class="backdrop__wapper-icon-label">
+                <input type="tel" name="tel" class="backdrop__input" />
+                <svg class="backdrop__icon-label" width="13" height="13">
+                  <use href="./img/icons.svg/symbol-defs.svg#tel"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="backdrop__label">
+              <span class="backdrop__label-text">Пошта</span>
+              <div class="backdrop__wapper-icon-label">
+                <input type="email" name="tel" class="backdrop__input" />
+                <svg class="backdrop__icon-label" width="16" height="12">
+                  <use href="./img/icons.svg/symbol-defs.svg#mail"></use>
+                </svg>
+              </div>
+            </label>
+            <label class="backdrop__label-comment">
+              <span class="backdrop__label-text">Коментар</span>
+              <textarea
+                name="comment"
+                cols="30"
+                rows="10"
+                placeholder="Введіть текст"
+                class="backdrop__comment-text"
+              ></textarea>
+            </label>
+            <label class="backdrop__label-text-agermeent">
+              <div class="backdrop__label-text-wrapper">
+                <input
+                  type="checkbox"
+                  name="agermeent"
+                  class="backdrop__agreement-checkbox"
+                />
+                <svg class="backdrop__label-text-icon" width="13" height="11">
+                  <use href="./img/icons.svg/symbol-defs.svg#accept"></use>
+                </svg>
+              </div>
+              <span class="backdrop__label-text-checkbox"
+                >Погоджуюся з розсилкою та приймаю
+                <a href="" class="backdrop__label-link">Умови договору</a></span
+              >
+            </label>
+            <div class="backdrop__wapper-btn-form">
+              <button type="submit" class="backdrop__form-btn">
+                Відправити
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
