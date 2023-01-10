@@ -1766,6 +1766,11 @@ body.modal-open {
 .form__text-mail-wrapper {
   width: 570px;
 }
+@media screen and (min-width: 480px) {
+  .form__text-mail-wrapper {
+    width: 207px;
+  }
+}
 
 .team__our {
   font-weight: 700;
@@ -1979,9 +1984,19 @@ body.modal-open {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (min-width: 480px) {
+  .team__card-person {
+    margin-bottom: 30px;
+  }
+}
 
 .team__cards li:last-child {
   margin-right: 0;
+}
+@media screen and (min-width: 480px) {
+  .team__cards li:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .team__cards li:first-child {
