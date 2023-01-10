@@ -2237,16 +2237,14 @@ body.modal-open {
   z-index: 100;
   left: 0;
   right: 0;
-  bottom: 0;
   top: 0;
+  height: 100vh;
   background-color: white;
   position: absolute;
-  width: 480px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
   display: none;
@@ -2260,6 +2258,7 @@ body.modal-open {
 .backdrop-nav.is-open {
   display: block;
   display: flex;
+  position: fixed;
 }
 @media screen and (min-width: 768px) {
   .backdrop-nav.is-open {
