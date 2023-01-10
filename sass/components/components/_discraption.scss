@@ -85,6 +85,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -134,12 +135,14 @@
   }
   @media screen and (min-width: 768px) {
     width: 331px;
-    margin-right: 30px;
+    margin-right: 0;
     margin-bottom: 0;
+    gap: 30px;
+    display: block;
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
-    margin-right: 30px;
+    margin-right: 0;
     justify-content: space-between;
     margin-bottom: 0;
   }
