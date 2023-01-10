@@ -960,7 +960,7 @@ body.modal-open {
   .footer__wrepper-two-contacs {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-right: 70px;
   }
 }
@@ -1009,6 +1009,20 @@ body.modal-open {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__hover-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__hover-address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -1616,7 +1630,7 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .business {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/Header\ img3321.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./img/Header\ img3321.jpg);
     width: 768px;
   }
 }
@@ -2179,7 +2193,6 @@ body.modal-open {
 
 .work {
   margin-bottom: 0;
-  padding-top: 47px;
   padding-bottom: 94px;
 }
 @media screen and (min-width: 480px) {
