@@ -31,10 +31,8 @@
 
 .backdrop-nav__wrapper {
   width: 100%;
-}
-
-.backdrop-nav__contact-wrapper {
-  margin-top: 302px;
+  display: flex;
+  flex-direction: column;
 }
 
 .backdrop-nav__title-link {
@@ -165,4 +163,8 @@
 .backdrop-nav__button-svg:focus,
 .backdrop-nav__button-svg:hover {
   fill: $hover-focus-color;
+}
+
+.backdrop-nav__title-nav {
+  margin-bottom: auto;
 }
