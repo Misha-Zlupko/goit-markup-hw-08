@@ -1,22 +1,20 @@
 .backdrop-nav {
-  @media screen and (min-width: 480px) {
-    z-index: 100;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    background-color: $primary-backgraund-color;
-    position: absolute;
-    width: 480px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    display: none;
-  }
+  z-index: 100;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: $primary-backgraund-color;
+  position: absolute;
+  width: 480px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: none;
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -24,6 +22,7 @@
 
 .backdrop-nav.is-open {
   display: block;
+  display: flex;
   @media screen and (min-width: 768px) {
     display: none;
   }
