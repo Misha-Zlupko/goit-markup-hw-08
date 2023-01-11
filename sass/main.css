@@ -2364,6 +2364,7 @@ body.modal-open {
   display: flex;
   position: relative;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .backdrop-nav__title-social li {
