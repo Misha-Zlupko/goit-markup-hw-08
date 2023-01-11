@@ -766,6 +766,8 @@ body.modal-open {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -805,7 +807,6 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .discraption__feature li:first-child {
     padding-top: 0;
-    margin-right: 30px;
   }
 }
 
@@ -1158,6 +1159,8 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .social-networks {
     padding-top: 0;
+    display: flex;
+    align-items: flex-start;
   }
 }
 
@@ -1708,6 +1711,8 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .form {
     margin-left: auto;
+    display: flex;
+    align-items: flex-start;
   }
 }
 
@@ -2273,6 +2278,9 @@ body.modal-open {
 .backdrop-nav__wrapper {
   display: flex;
   flex-direction: column;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-top: 48px;
 }
 
 .backdrop-nav__title-link {
@@ -2324,7 +2332,7 @@ body.modal-open {
 .backdrop-nav__title-social {
   display: flex;
   position: relative;
-  padding-bottom: 48px;
+  padding: 0;
 }
 
 .backdrop-nav__title-social li {
@@ -2383,6 +2391,10 @@ body.modal-open {
   margin-bottom: 64px;
 }
 
+.backdrop-nav__title-contacts {
+  padding: 0;
+}
+
 .backdrop-nav__title-item-contact {
   margin-bottom: 30px;
 }
@@ -2394,6 +2406,7 @@ body.modal-open {
   position: absolute;
   cursor: pointer;
   margin-left: 276px;
+  top: 10px;
 }
 
 .backdrop-nav__button-svg:focus,
@@ -2403,4 +2416,5 @@ body.modal-open {
 
 .backdrop-nav__title-nav {
   margin-bottom: auto;
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */
